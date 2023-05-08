@@ -1,3 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap');
+@import "reset.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#login-form input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid white;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+#login-form input:last-child {
+    transform: scale(0);
+}
+
+#greeting {
+    font-size: 70px;
+}
+
+#todo-form input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid white;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+#todo-form input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+#todo-list {
+    position: absolute;
+    top: 60%;
+    width: 500px;
+    height: 300px;
+    overflow-x: auto;
+}
+
+#todo-list li{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-list li span {
+    font-weight: 500;
+    margin: 10px;
+}
+
+#todo-list li button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    text-align: center;
+}
+
+#quote span:first-child {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#quote span:last-child {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#clock {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+}
+
+#weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+}
 .hidden {
-    display: none;
+    content-visibility: hidden;
 }
